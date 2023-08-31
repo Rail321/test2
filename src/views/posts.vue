@@ -5,34 +5,22 @@
 </script>
 
 <script setup>
-  import axios from 'axios'
+  import { ref } from 'vue'
+  import posts from '../lists/posts'
 
-  const items = {
-    list: [],
-    get( options ) {
-      return (
-        new Promise( resolve => {
-          axios.get( 'https://jsonplaceholder.typicode.com/posts', options )
-            .then( d => ( this.list = d.data ) )
-            .then( resolve )
-        } )
-      )
-    }
+  const items = ref( null )
+
+  const get = () => {
+    posts.get()
+      .then( r => r.json() )
+      .then( d => (
+        items.value = d
+      ) )
   }
 
-  const filter = {
-    params: {
-      _sort: 'id',
-      _order: 'desc',
-      _limit: 1,
-      _page: 1,
-      userId: 9
-    }
-  }
-
-  items.get( filter )
-    .then( () => console.log( items.list ) )
+  get()
 </script>
 
 <template>
+  <pre>{{ items }}</pre>
 </template>

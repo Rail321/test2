@@ -52,9 +52,6 @@
     overflow: hidden;
     overflow-x: auto;
   }
-  .table-outer::-webkit-scrollbar {
-    display: none;
-  }
   .table-td, .table-th {
     padding: 5px 10px;
   }
@@ -65,5 +62,11 @@
   /* UTILS */
   .text-nowrap {
     white-space: nowrap;
+  }
+  .bg-primary {
+    background-color: #0D6EFD;
+  }
+  .text-light {
+    color: #F8F9FA;
   }
 </style>

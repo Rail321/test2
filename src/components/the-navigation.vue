@@ -9,6 +9,10 @@
     {
       title: 'posts',
       path: '/posts'
+    },
+    {
+      title: 'ui',
+      path: '/ui'
     }
   ] )
 </script>

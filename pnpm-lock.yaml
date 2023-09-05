@@ -6,12 +6,14 @@ specifiers:
   '@vue/cli-service': ~4.5.15
   '@vue/compiler-sfc': ^3.0.0
   axios: ^1.5.0
+  bootstrap: ^5.3.1
   core-js: ^3.6.5
   vue: ^3.0.0
   vue-router: ^4.0.0-0
 
 dependencies:
   axios: 1.5.0
+  bootstrap: 5.3.1
   core-js: 3.32.1
   vue: 3.3.4
   vue-router: 4.2.4_vue@3.3.4
@@ -2679,6 +2681,12 @@ packages:
   /boolbase/1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
     dev: true
+
+  /bootstrap/5.3.1:
+    resolution: {integrity: sha512-jzwza3Yagduci2x0rr9MeFSORjcHpt0lRZukZPZQJT1Dth5qzV7XcgGqYzi39KGAVYR8QEDVoO0ubFKOxzMG+g==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.8
+    dev: false
 
   /brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}

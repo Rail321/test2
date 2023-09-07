@@ -5,7 +5,7 @@
 </script>
 
 <script setup>
-  import '../posts/index.js';
+  import '../posts.js';
 </script>
 
 <template>
